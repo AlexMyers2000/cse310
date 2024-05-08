@@ -18,39 +18,18 @@ struct Piece {
 };
 
 // Function to initialize the chess board with pieces in their initial positions
-vector< vector < Piece > > initializeBoard() {
-    vector<vector <Piece> > board(BOARD_SIZE, vector<Piece>(BOARD_SIZE));
+vector<vector<Piece>> initializeBoard() {
+    vector<vector<Piece>> board(BOARD_SIZE, vector<Piece>(BOARD_SIZE));
     // Initialize pawns
     for (int i = 0; i < BOARD_SIZE; ++i) {
         board[1][i] = {Pawn, 'P', "Black"};
         board[6][i] = {Pawn, 'P', "White"};
-
     }
-    // Initialize rooks
-    board[0][0] = {Rook, 'R', "Black"};
-    board[0][7] = {Rook, 'R', "Black"};
-    board[7][0] = {Rook, 'R', "White"};
-    board[7][7] = {Rook, 'R', "White"};
-    // Initialize knights
-    board[0][1] = {Knight, 'N', "Black"};
-    board[0][6] = {Knight, 'N', "Black"};
-    board[7][1] = {Knight, 'N', "White"};
-    board[7][6] = {Knight, 'N', "White"};
-    // Initialize bishops
-    board[0][2] = {Bishop, 'B', "Black"};
-    board[0][5] = {Bishop, 'B', "Black"};
-    board[7][2] = {Bishop, 'B', "White"};
-    board[7][5] = {Bishop, 'B', "White"};
-    // Initialize queens
-    board[0][3] = {Queen, 'Q', "Black"};
-    board[7][3] = {Queen, 'Q', "White"};
-    // Initialize kings
-    board[0][4] = {King, 'K', "Black"};
-    board[7][4] = {King, 'K', "White"};
+    // Initialize other pieces (similar logic for rooks, knights, bishops, queen, king)
+    // ...
 
     return board;
 }
-
 
 // Function to display the chess board
 void displayBoard(const vector<vector<Piece>>& board) {
@@ -60,18 +39,18 @@ void displayBoard(const vector<vector<Piece>>& board) {
                 cout << 'P';
             else if (board[i][j].type == Rook)
                 cout << 'R';
-            else if (board[i][j].type == Knight)
-                cout << 'N';
-            else if (board[i][j].type == Bishop)
-                cout << 'B';
-            else if (board[i][j].type == Queen)
-                cout << 'Q';
-            else if (board[i][j].type == King)
-                cout << 'K';
+            // ... (similar logic for other piece types)
+            else if (board[i][j].type == PieceType())
+                cout << '-'; // Empty square
             cout << board[i][j].color[0] << ' ';
         }
         cout << endl;
     }
+}
+
+// Function to check if a square is occupied
+bool isSquareOccupied(const vector<vector<Piece>>& board, int x, int y) {
+    return isValidMove(x, y) && board[x][y].type != PieceType();
 }
 
 // Function to check if the move is within the bounds of the board
@@ -79,29 +58,46 @@ bool isValidMove(int x, int y) {
     return x >= 0 && x < BOARD_SIZE && y >= 0 && y < BOARD_SIZE;
 }
 
-// Function to move a piece on the board
+// Function to capture a piece (placeholder for now)
+void capturePiece(vector<vector<Piece>>& board, int fromX, int fromY, int toX, int toY) {
+    // Implement logic to remove captured piece from the board
+    // ...
+}
+
+// Placeholder function for now, needs to be implemented for each piece type
+bool isValidMoveForPiece(const vector<vector<Piece>>& board, PieceType pieceType, int fromX, int fromY, int toX, int toY) {
+    // Implement logic to check valid moves based on piece type
+    // ...
+    return false; // Placeholder return value
+}
+
+// Function to move a piece on the board (handles capturing)
 void movePiece(vector<vector<Piece>>& board, int fromX, int fromY, int toX, int toY) {
-    if (isValidMove(toX, toY)) {
+    if (!isValidMove(toX, toY)) {
+        cout << "Invalid move: Destination outside board!" << endl;
+        return;
+    }
+
+    if (isSquareOccupied(board, toX, toY) && board[fromX][fromY].color == board[toX][toY].color) {
+        cout << "Invalid move: Cannot capture your own piece!" << endl;
+        return;
+    }
+
+    if (isValidMoveForPiece(board, board[fromX][fromY].type, fromX, fromY, toX, toY)) {
+        if (isSquareOccupied(board, toX, toY)) {
+            capturePiece(board, fromX, fromY, toX, toY); // Capture opponent's piece
+        }
         board[toX][toY] = board[fromX][fromY];
         board[fromX][fromY] = {PieceType(), ' ', ""};
     } else {
-        cout << "Invalid move!" << endl;
+        cout << "Invalid move for this piece type!" << endl;
     }
 }
 
+// Placeholder function for now, needs to track whose turn it is
+bool isWhiteTurn = true; // Assuming white starts
+
 int main() {
     // Initialize the board
-    vector<vector<Piece>> board = initializeBoard();
-
-    // Display the initial board
-    displayBoard(board);
-
-    // Sample move: Move a pawn
-    movePiece(board, 1, 0, 3, 0); // Moving the pawn from (1,0) to (3,0)
-
-    // Display the board after the move
-    cout << endl;
-    displayBoard(board);
-
-    return 0;
-}
+    vector<vector<Piece>> board = initializeBoard() ;
+   }
