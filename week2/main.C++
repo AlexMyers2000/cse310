@@ -10,6 +10,9 @@ const int BOARD_SIZE = 8;
 // Enum to represent piece types
 enum PieceType { Pawn, Rook, Knight, Bishop, Queen, King };
 
+// Forward declaration
+bool isValidMove(int x, int y);
+
 // Struct to represent a chess piece
 struct Piece {
     PieceType type;
@@ -99,5 +102,5 @@ bool isWhiteTurn = true; // Assuming white starts
 
 int main() {
     // Initialize the board
-    vector<vector<Piece>> board = initializeBoard() ;
-   }
+    vector<vector<Piece>> board = initializeBoard();
+}

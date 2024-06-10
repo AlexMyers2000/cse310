@@ -1,32 +1,42 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+{This project was to work in C++ and I chose to build a chess game that is able to be ran through a termial window. I was able to achive this goal and do hope to expand upon this in the future.}
 
-{Provide a description of the software that you wrote to demonstrate the C++ language.}
+{I wanted to test my skills in C++ and see what i was able to create. I was able to create the board and pieces and make them have the ability to move and have restictions where they cant move just anywhere on the board}
 
-{Describe your purpose for writing this software.}
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](Still uploading to youtube will post in comments section when its up)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+Standard Libraries: The code includes several standard C++ libraries:
 
-{Describe the programming language that you used and any libraries.}
+<iostream>: Provides input/output streams, used for console output.
+<vector>: Implements dynamic arrays, used for representing the chess board and pieces.
+<string>: Provides string manipulation functionalities, used for representing colors of the chess pieces.
+Structs and Enums: The code utilizes structs and enums to represent chess pieces and their types:
+
+PieceType: An enum representing different types of chess pieces like Pawn, Rook, Knight, etc.
+Piece: A struct representing a chess piece, containing its type, symbol, and color.
+Functions: Several functions are defined to handle different aspects of the chess game:
+
+initializeBoard(): Initializes the chess board with pieces in their initial positions.
+displayBoard(): Displays the current state of the chess board.
+isSquareOccupied(): Checks if a square on the board is occupied by a piece.
+isValidMove(): Checks if a move is within the bounds of the chess board.
+isValidMoveForPiece(): Placeholder function to check if a move is valid for a specific piece type.
+capturePiece(): Placeholder function to handle capturing opponent's pieces.
+movePiece(): Moves a piece on the board, handling capturing and validity checks.
+Main Function: The main() function serves as the entry point of the program. It initializes the chess board and currently doesn't contain the game loop or user input handling logic.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Web Site Name](https://www.w3schools.com/cpp/)
+- [Web Site Name](https://cplusplus.com/reference/stl/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- I hope that i will be able to add graphics and actual images of each piece
+- I hope to implement an ai side that will play against the user and have different levels for beginners to experts 
+- I hope to implement a better board as well as just overal looks and possibly have the options for changing if you wanted to. 
