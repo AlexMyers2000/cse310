@@ -32,8 +32,8 @@ Main Function: The main() function serves as the entry point of the program. It 
 
 # Useful Websites
 
-- [Web Site Name](https://www.w3schools.com/cpp/)
-- [Web Site Name](https://cplusplus.com/reference/stl/)
+- [W3 Schools](https://www.w3schools.com/cpp/)
+- [Cplusplus](https://cplusplus.com/reference/stl/)
 
 # Future Work
 
