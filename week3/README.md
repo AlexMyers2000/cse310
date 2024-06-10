@@ -2,9 +2,8 @@
 
 {So with this project the whole goal i came up with was to be able to create a functioning random password generator and to be able to generate random passwords for users for anything they may need. I was able to acomplish this}
 
-{Describe your purpose for writing this software.}
+{I feel the importance of having a secured password and being able to make sure that its not something that someone could easly create. Thru this I was able to learn how to create this and make strong passwords for the future.}
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
 
 [Software Demo Video](I am trying to upload to youtube currently its just really slow trying to upload it.)
 
@@ -26,14 +25,10 @@ Data structure from Java Collection Framework: The code uses List from the Java 
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
 - [Beginners Book](https://beginnersbook.com/java-collections-tutorials/)
 - [W3 Schools](https://www.w3schools.com/java/default.asp)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 
 - I hope to make it more polised and look cleaner over all
 - I will make a way to add it to a website so that i can see it on a htlm document
