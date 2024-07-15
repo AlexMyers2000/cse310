@@ -104,3 +104,5 @@ int main() {
     // Initialize the board
     vector<vector<Piece>> board = initializeBoard();
 }
+
+// Chat gpt was used for this

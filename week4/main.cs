@@ -98,3 +98,6 @@ class Program {
         client2.SendMessage("Hello from client 2");
     }
 }
+
+
+// Chat gpt was used for this. 

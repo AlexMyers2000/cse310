@@ -107,3 +107,5 @@ public class GeneratePassword {
         
     }  
 }  
+
+// Chat gpt was used for this
