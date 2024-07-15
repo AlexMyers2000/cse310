@@ -40,3 +40,5 @@ Main Function: The main() function serves as the entry point of the program. It 
 - I hope that i will be able to add graphics and actual images of each piece
 - I hope to implement an ai side that will play against the user and have different levels for beginners to experts 
 - I hope to implement a better board as well as just overal looks and possibly have the options for changing if you wanted to. 
+
+Chat gpt was used to generate answers

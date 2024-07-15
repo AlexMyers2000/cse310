@@ -38,3 +38,5 @@ The Encoding class, also part of the .NET Framework, is used to convert strings 
 - Enhance the security of the chat application by implementing end-to-end encryption for messages exchanged between clients and the server. This would ensure that messages are encrypted before leaving the sender's device and decrypted only upon reaching the intended recipient, thereby protecting the confidentiality of the communication. You could use cryptographic libraries like Bouncy Castle or .NET's built-in cryptography APIs to implement encryption algorithms such as AES or RSA.
 
 - Enable users to share a variety of media types, including images, videos, documents, and more, directly within the chat interface. Implement functionality to upload and download files securely, with support for file previews and thumbnails. You could integrate with cloud storage services like AWS S3 or Azure Blob Storage to store and retrieve files, or implement peer-to-peer file transfer protocols for direct file exchange between clients
+
+Chat gpt was used to generate answers

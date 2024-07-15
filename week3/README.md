@@ -33,3 +33,5 @@ Data structure from Java Collection Framework: The code uses List from the Java 
 - I hope to make it more polised and look cleaner over all
 - I will make a way to add it to a website so that i can see it on a htlm document
 - I hope to be able to add something where i could use it to create pins and things like that for a use so thats a strech goal for the future.
+
+Chat gpt was used to generate answers
