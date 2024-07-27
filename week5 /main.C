@@ -100,3 +100,5 @@ void clear_screen() {
         system("clear");
     #endif
 }
+
+chat gpt was used 
