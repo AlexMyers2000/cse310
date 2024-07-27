@@ -24,3 +24,5 @@ stdio.h was the library used for this for the project to be able to make everyth
 - Probably added more functions and buttons that they usually can use as in like what the calculator has on like an iPhone or iPad
 - To work on the overall design to make it look a lot better than having it just running to terminal one to maybe add a play soccer window that I can run in so it doesn't have to be just random in vscode
 - I hope to be able to eventually make it where you can use like an Apple Pencil or something like that and be able to have it understand the math and just show you step-by-step how to solve an answer.
+
+chat was used to help me in this
